@@ -58,3 +58,14 @@ class Book(models.Model):
 
     def __str__(self):
         return self.name
+
+class Notebook(models.Model):
+    name = models.CharField(max_length=245)
+    brand = models.CharField(max_length=245)
+    ram = models.CharField(max_length=245)
+    memory = models.CharField(max_length=245)
+    video_card = models.CharField(max_length=245)
+
+    def __str__(self):
+        return self.name
+
